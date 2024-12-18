@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>SITE Recipes Index</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}
+Site Recipes
+{% endblock title %}
+
+{% block body %}
 <h1>Welcome to our Site Recipes!</h1>
 <h2>Work in progress</h2>
 <h3>It is {% now "jS F Y" %}</h3>
-
-</body>
-</html>
+{% endblock body %}
