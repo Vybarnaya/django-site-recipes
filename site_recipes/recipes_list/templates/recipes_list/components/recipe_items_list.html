@@ -1,0 +1,12 @@
+<ul>
+  {% for item in object_list %}
+  <li>
+    <a href="{% url 'recipes_list:detail' pk=item.pk %}">
+      {{item.title}}
+      {% if item.time_for_cooking > 5 %}
+      fn: Значительное время приготовления
+      {% endif %}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

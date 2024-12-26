@@ -1,0 +1,12 @@
+{% extends "recipes_list/base.html" %}
+
+{% block title %}
+Recipe #{{ object.pk }}
+{% endblock %}
+
+{% block body %}
+<h3>Recipe:</h3>
+<div>
+  <div>Title: <strong>{{object.description}}</strong></div>
+</div>
+{% endblock %}

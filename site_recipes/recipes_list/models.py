@@ -3,6 +3,7 @@ from django.db import models
 
 class Recipe(models.Model):
     class Meta:
+        # ordering = ('-time_for_cooking',) можно сортировку делать и во вью, и в моделе
         verbose_name = 'Recipe'
         verbose_name_plural = 'Recipes'
 

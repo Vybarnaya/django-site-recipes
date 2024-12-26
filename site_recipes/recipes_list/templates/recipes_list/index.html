@@ -1,0 +1,15 @@
+{% extends "recipes_list/base.html" %}
+
+{% block title %}
+Site Recipes App
+{% endblock %}
+
+{% block body %}
+<h1>Site Recipes App</h1>
+<div>
+  <a href="{% url 'recipes_list:list' %}">Show all recipes</a>
+</div>
+
+<h2>Recipes:</h2>
+{% include "recipes_list/components/recipe_items_list.html" %}
+{% endblock %}
