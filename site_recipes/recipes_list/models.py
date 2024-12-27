@@ -11,6 +11,6 @@ class Recipe(models.Model):
     description = models.TextField()
     steps_cooking = models.TextField()
     time_for_cooking = models.IntegerField(default=10)
-
+    # favorites = models.BooleanField(default=False)
     def __str__(self):
         return self.title

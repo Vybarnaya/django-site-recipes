@@ -7,9 +7,8 @@ Site Recipes App
 {% block body %}
 <h1>Site Recipes App</h1>
 <div>
-  <a href="{% url 'recipes_list:list' %}">Show all recipes</a>
+  <a href="{% url 'recipes_list:list' %}">All recipe items</a>
 </div>
-
 <h2>Recipes:</h2>
-{% include "recipes_list/components/recipe_items_list.html" %}
+{% include 'recipes_list/components/recipe_items_list.html' %}
 {% endblock %}

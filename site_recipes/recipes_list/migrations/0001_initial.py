@@ -18,6 +18,7 @@ class Migration(migrations.Migration):
                 ('description', models.TextField()),
                 ('steps_cooking', models.TextField()),
                 ('time_for_cooking', models.IntegerField(default=10)),
+                # ('favorites', models.BooleanField(default=False)),
             ],
         ),
     ]

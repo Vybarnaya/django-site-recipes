@@ -7,6 +7,7 @@ Recipe #{{ object.pk }}
 {% block body %}
 <h3>Recipe:</h3>
 <div>
-  <div>Title: <strong>{{object.description}}</strong></div>
+  <div>Title:<strong>{{object.title}}</strong></div>
+  <div>Description:<strong>{{object.description}}</strong></div>
 </div>
 {% endblock %}

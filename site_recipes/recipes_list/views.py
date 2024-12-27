@@ -10,7 +10,7 @@ def index_view(request: HttpRequest) -> HttpResponse:
     return render(
         request,
         template_name="recipes_list/index.html",
-        context={"all_items": all_items},
+        context={"all_items": all_items}[:2],
     )
 
 
@@ -25,12 +25,10 @@ class RecipeListIndexView(ListView):
 
 
 class RecipeListView(ListView):
-    model = Recipe
     template_name = "recipes_list/index.html"
-    context_object_name = "all_items"
+    model = Recipe
 
 
 class RecipeDetailView(DetailView):
     model = Recipe
     template_name = "recipes_list/index.html"
-    context_object_name = "all_items"

@@ -1,10 +1,12 @@
 <ul>
-  {% for item in object_list %}
+  {% for todo_item in object_list %}
   <li>
-    <a href="{% url 'recipes_list:detail' pk=item.pk %}">
-      {{item.title}}
-      {% if item.time_for_cooking > 5 %}
+    <a href="{% url 'recipes_list:detail' pk=todo_item.pk %}">
+      {{todo_item.title}}
+      {% if todo_item.time_for_cooking > 5 %}
       fn: Значительное время приготовления
+      {% else %}
+      fn: Время приготовления не значительное
       {% endif %}
     </a>
   </li>
